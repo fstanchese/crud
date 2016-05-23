@@ -53,7 +53,7 @@ if (isset ( $msg )) {
 		<table class='table table-bordered'>
 
 			<tr>
-				<td>Descrição</td>
+				<td>Titulo</td>
 				<td><input type='text' name='descricao' class='form-control'
 					value="<?php echo $descricao; ?>" required></td>
 			</tr>

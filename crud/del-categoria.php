@@ -14,8 +14,12 @@ $categoria = new categoria ( $DB_con );
 
 if (isset ( $_POST ['btn-del'] )) {
 	$id = $_GET ['delete_id'];
-	$categoria->excluir ( $id );
-	header ( "Location: del-categoria.php?deleted" );
+	try {
+		$categoria->excluir ( $id );
+		header ( "Location: del-categoria.php?deleted" );		
+	} catch (Exception $e) {
+		header ( "Location: del-categoria.php?failure" );
+	}
 }
 
 ?>
@@ -25,16 +29,19 @@ if (isset ( $_POST ['btn-del'] )) {
 <div class="clearfix"></div>
 
 <div class="container">
-
 	<?php
 	if (isset ( $_GET ['deleted'] )) {
 		?>
-        <div class="alert alert-success">Categoria excluida...</div>
+        <div class="alert alert-success">Categoria excluida com sucesso</div>
         <?php
-	} else {
+	} elseif (isset ( $_GET ['failure'] )) {
 		?>
-        <div class="alert alert-danger">Confirma exclusão da Categoria
-		?</div>
+		 <div class="alert alert-danger">Erro na exclusão, categoria possui filmes cadastrados</div>
+		<?php		
+	}
+	else {
+		?>
+        <div class="alert alert-danger">Confirma exclusão da Categoria ?</div>
         <?php
 	}
 	?>	

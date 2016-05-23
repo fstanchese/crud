@@ -31,7 +31,7 @@ if (isset ( $_POST ['btn-del'] )) {
         <?php
 	} else {
 		?>
-        <div class="alert alert-danger">Confirma exclusão da Filme ?</div>
+        <div class="alert alert-danger">Confirma exclusão do Filme ?</div>
         <?php
 	}
 	?>	
@@ -44,7 +44,7 @@ if (isset ( $_POST ['btn-del'] )) {
          <table class='table table-bordered'>
 		<tr>
 			<th>#</th>
-			<th>Descrição</th>
+			<th>Titulo</th>
 			<th>Categoria</th>
 		</tr>
          <?php

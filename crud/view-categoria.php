@@ -19,7 +19,7 @@ $categoria = new categoria ( $DB_con );
 <div class="clearfix"></div>
 <div class="container">
 	<a href="add-categoria.php" class="btn btn-large btn-info"><i
-		class="glyphicon glyphicon-plus"></i> &nbsp; Adicionar</a>
+		class="glyphicon glyphicon-plus"></i> &nbsp; Adicionar Categoria</a>
 </div>
 
 <div class="clearfix"></div>

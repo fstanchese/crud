@@ -19,7 +19,7 @@ $filme = new filme ( $DB_con );
 <div class="clearfix"></div>
 <div class="container">
 	<a href="add-filme.php" class="btn btn-large btn-info"><i
-		class="glyphicon glyphicon-plus"></i> &nbsp; Adicionar</a>
+		class="glyphicon glyphicon-plus"></i> &nbsp; Adicionar Filme</a>
 </div>
 
 <div class="clearfix"></div>

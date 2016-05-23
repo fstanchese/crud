@@ -30,7 +30,7 @@ if (isset ( $_POST ['btn-save'] )) {
 if (isset ( $_GET ['inserted'] )) {
 ?>
 <div class="container">
-	<div class="alert alert-info">Cadastrado com sucesso</div>
+	<div class="alert alert-info">Filme cadastrado com sucesso</div>
 </div>
 <?php
 } else if (isset ( $_GET ['failure'] )) {
@@ -48,11 +48,9 @@ if (isset ( $_GET ['inserted'] )) {
 <div class="container">
 	<form method='post'>
 		<table class='table table-bordered'>
-
 			<tr>
-				<td>Descrição</td>
-				<td><input type='text' name='descricao' class='form-control'
-					required></td>
+				<td>Titulo</td>
+				<td><input type='text' name='descricao' class='form-control' required></td>
 			</tr>
 			<tr>
 				<td>Categoria</td>
@@ -72,10 +70,9 @@ if (isset ( $_GET ['inserted'] )) {
 			<tr>
 				<td colspan="2">
 					<button type="submit" class="btn btn-primary" name="btn-save">
-						<span class="glyphicon glyphicon-plus"></span> Incluir
-					</button> <a href="view-filme.php"
-					class="btn btn-large btn-success"><i
-						class="glyphicon glyphicon-backward"></i> Voltar</a>
+					<span class="glyphicon glyphicon-plus"></span> Incluir
+					</button> 
+					<a href="view-filme.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> Voltar</a>
 				</td>
 			</tr>
 
