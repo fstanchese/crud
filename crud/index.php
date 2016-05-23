@@ -8,11 +8,11 @@
 
 </head>
 <body>
-	<div class="navbar navbar-default navbar-static-top" role="navigation">
-		<div class="container">
+	<div class="container">
+		<div class="navbar navbar-inverse" role="navigation">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="view-filme.php">Filmes</a> <a
-					class="navbar-brand" href="view-categoria.php">Categorias</a>
+				<a class="navbar-brand" href="view-filme.php">Filmes</a> 
+				<a class="navbar-brand" href="view-categoria.php">Categorias</a>
 			</div>
 		</div>
 	</div>
